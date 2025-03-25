@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculations.js"></script>
+    <script src="inputOutput.js"></script>
+</head>
+<body>
+  <main>
+    <div id="calc">
+        <div id="display"></div>
+        <div id="buttons">
+            <div id="digits">
+                <button onclick="handleClick('1')">1</button>
+                <button onclick="handleClick('2')">2</button>
+                <button onclick="handleClick('3')">3</button>
+                <button onclick="handleClick('4')">4</button>
+                <button onclick="handleClick('5')">5</button>
+                <button onclick="handleClick('6')">6</button>
+                <button onclick="handleClick('7')">7</button>
+                <button onclick="handleClick('8')">8</button>
+                <button onclick="handleClick('9')">9</button>
+                <button onclick="handleClick('0')">0</button>
+                <button onclick="handleClick('.')">.</button>
+            </div>
+            <div id="functions">
+                <button onclick="handleClick('+')">+</button>
+                <button onclick="handleClick('-')">-</button>
+                <button onclick="handleClick('*')">*</button>
+                <button onclick="handleClick('/')">/</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()">Clr</button>
+            </div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
